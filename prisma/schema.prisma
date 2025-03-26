@@ -24,7 +24,6 @@ model profile {
   id                 Int          @id @default(autoincrement())
   name               String
   email              String       @unique(map: "Profile_email_key")
-  password           String
   document_id        String       @unique(map: "Profile_document_id_key")
   rg                 String?      @unique(map: "Profile_rg_key")
   ie                 String?      @unique(map: "Profile_ie_key")
